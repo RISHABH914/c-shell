@@ -99,7 +99,7 @@ int check(char* tkn[],int cnt){
     if(!shell_cmd()){
         return 0;
     }
-//    printf("%d\n",currenttoken);
+    
     return currenttoken==token_cnt;
 }
 
