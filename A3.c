@@ -80,7 +80,7 @@ int shell_cmd(){
     if(!cmd_group()){
         return 0;
     }
-    while(accept("&") || accept("&&")){
+    while(accept("&") || accept("&&") || accept(";")){
         currenttoken++;
         if(currenttoken==token_cnt){
             return 1;
