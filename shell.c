@@ -1,4 +1,7 @@
+#include "A1.h"
+#include "tokenize.h"
 #include "shell.h"
+#include "A3.h"
 // #include<pwd.h>
 // #include<unistd.h>
 int main(){
@@ -29,6 +32,7 @@ int main(){
     char *tokens[MAX_TOKENS];
     int token_cnt=tokenize_input(intake,tokens);
 
+    
     //// A3 starts /////
     if(check(tokens,token_cnt)){
         printf("done\n");
